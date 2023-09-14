@@ -1,0 +1,71 @@
+/* Raleway  */
+@font-face {
+  font-family: "Raleway";
+  src: url('../font/Raleway/static/Raleway-Light.ttf') format("opentype");
+  font-style: normal;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url('../font/Raleway/static/Raleway-Medium.ttf') format("opentype");
+  font-style: normal;
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+
+}
+
+
+@font-face {
+  font-family: "Raleway";
+  src: url('../font/Raleway/static/Raleway-Bold.ttf') format("opentype");
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+
+}
+
+
+/* Noto kr  */
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url('../font/Noto_Sans_KR/static/NotoSansKR-ExtraLight.ttf') format("opentype");
+  font-style: normal;
+  font-weight: 200;
+  text-rendering: optimizeLegibility;
+  unicode-range:U+AC00-D7A3, U+0030-0039;
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url('../font/Noto_Sans_KR/static/NotoSansKR-Regular.ttf') format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  unicode-range:U+AC00-D7A3, U+0030-0039;
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url('../font/Noto_Sans_KR/static/NotoSansKR-Medium.ttf') format("opentype");
+  font-style: normal;
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+  unicode-range:U+AC00-D7A3, U+0030-0039;
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url('../font/Noto_Sans_KR/static/NotoSansKR-Bold.ttf') format("opentype");
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  unicode-range:U+AC00-D7A3, U+0030-0039;
+}
+
+body {font-family: "Noto Sans KR", "Raleway";}
+
+#inner {max-width:1440px; margin:0 auto;}
+body {background:#242424;}
