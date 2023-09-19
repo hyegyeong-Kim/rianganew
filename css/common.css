@@ -64,8 +64,7 @@
   text-rendering: optimizeLegibility;
   unicode-range:U+AC00-D7A3, U+0030-0039;
 }
-
-body {font-family: "Noto Sans KR", "Raleway";}
-
+body {font-family: "Noto Sans KR", "Raleway"; color:#fff; background:#242424; }
+.wrap {overflow-x: hidden;}
 #inner {max-width:1440px; margin:0 auto;}
-body {background:#242424;}
+#inner p strong em {width:20px; height:20px; background:#E0272C; border-radius:50%; position:absolute; bottom:20%; display:inline-block; }

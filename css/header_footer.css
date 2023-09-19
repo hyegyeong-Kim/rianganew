@@ -1,5 +1,6 @@
 /* header */
 header {width:100%; padding: 0.8em 3.1em 0.6em 3.1em; box-sizing:border-box; display: flex; align-items:center; justify-content:space-between; position:absolute; z-index: 100;}
+#header {position:static !important;}
 header h1 {width:9em;}
 header h1 img {width:100%;}
 header > div {width:6em; height:1.5em; display:flex; align-items: center; justify-content:space-between; cursor:pointer;}
@@ -12,3 +13,8 @@ header .gnb_btn_wrap span:last-of-type {width:2.5em;}
 /* hover */
 header > div:hover .gnb_btn_wrap span:first-of-type {width:2.5em;}
 
+
+/* footer */
+footer {padding: 2em 3.1em; background:#101010; display:flex; justify-content:space-between; align-items:center;}
+footer  dl {display:flex; align-items:center;}
+footer  dl dt {margin-right:10px; display:flex; flex-direction:column}

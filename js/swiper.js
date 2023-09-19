@@ -25,17 +25,6 @@ var swiper_1 = new Swiper(".sec_1_swiper", {
      },
    });
 
-
-  // //progress Bar
-  // var pagingSwiper = new Swiper(".sec_1_swiper", {
-  //   pagination: {
-  //     el: ".pagination_progress",
-  //     type: "progressbar",
-  //   },
-  // });
-  
-  // swiper_1.controller.control = pagingSwiper;
-
   //progress Bar
 	var pagingSwiper = new Swiper(".sec_1_swiper", {
 		pagination: {
@@ -43,6 +32,19 @@ var swiper_1 = new Swiper(".sec_1_swiper", {
 			type: "progressbar",
 		},
 	});
-
     //Main Swiper로 progress Bar 제어
     swiper_1.controller.control = pagingSwiper;
+
+/* sec_3 swiper */
+    var swiper = new Swiper(".sec_3_swiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });

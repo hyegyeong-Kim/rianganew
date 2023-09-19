@@ -1,0 +1,20 @@
+.wrap {position:relative;}
+.container #inner > h2 {padding-top:6vw;}
+#inner > ul {display:flex;}
+#inner > ul > li {margin-right: 2.5vw;}
+#inner > ul > li > a {position:relative;}
+#inner > ul > li > a::after {content:''; width:0%; height:2px; background:#fff; position:absolute; bottom:0; left:0; display:block; transition:all 0.3s}
+#inner > ul > li:hover > a::after {content:''; width:100%;}
+
+
+/*gallery*/
+/* sticky gallery */
+.band {width:100%; margin-top:20px; box-sizing:border-box; min-height:100px; position:relative;}
+.band .item {display:inline-block; position:absolute; transition:all 0.5s;}
+.band .item img {display:block; width:100%;}
+/* .band .item img {width:100%;} */
+.band .item  > dd > ul {font-size:0.8vw; display:flex; justify-content:space-between;}
+.band .item > dd:last-of-type {margin-top:1vw; font-size:1.5vw; font-weight:500;}
+
+/* item 별 */
+

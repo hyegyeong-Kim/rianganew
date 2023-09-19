@@ -1,0 +1,27 @@
+.wrap {position:relative;}
+.container #inner > h2 {padding-top:6vw;}
+#inner > ul {display:flex;}
+#inner > ul > li {margin-right: 2.5vw;}
+#inner > ul > li > a {position:relative;}
+#inner > ul > li > a::after {content:''; width:0%; height:2px; background:#fff; position:absolute; bottom:0; left:0; display:block; transition:all 0.3s}
+#inner > ul > li:hover > a::after {content:''; width:100%;}
+
+
+/*gallery*/
+/* sticky gallery */
+.masonry, .sub_wrap{max-width:1440px;}
+.masonry .item img, .sub_wrap .item img {
+  width: 100%;
+  padding: 1%;
+  height: auto;
+}
+.item{float: left; margin-right: 10px;}
+.masonry .item.small  {  width: 25%; }
+.masonry .item.medium, .sub_wrap .item.medium {  width: 32%; }
+.masonry .item.large  {  width: 48%; }
+.masonry .item.big_large, .sub_wrap .item.big_large  {  width: 64%; }
+/* item 별 */
+.masonry .item  > dd > ul, .sub_wrap .item > dd> ul {width:inherit; font-size:0.8vw; display:flex; justify-content:space-between;}
+.masonry .item > dd:last-of-type, .sub_wrap .item > dd:last-of-type {margin-top:1vw; font-size:1.5vw; font-weight:500;}
+.masonry .item, .sub_wrap .item {margin-top: 30px;}
+.wrap footer {margin-top: 30px;}

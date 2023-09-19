@@ -5,15 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/header_footer.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/swiper.css">
     <script defer src="./js/includeHTML.js"></script>
+    <script defer src="./js/common.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script defer src="./js/swiper.js"></script>
+    <script src="https://kit.fontawesome.com/7d1f9ca95d.js" crossorigin="anonymous"></script>
     <script defer src="./js/main.js"></script>
+    <script defer src="./js/masonry.pkgd.min.js"></script>
     <title>rianagnew</title>
 </head>
 <body>
@@ -22,7 +26,7 @@
     <div id="container">
       <section class="sec_1">
         <!-- Swiper -->
-        <div class="sec_1_swiper">
+        <div class="sec_1_swiper" style="overflow: hidden;">
           <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="./img/main/section_1/Group 593.png" alt=""></div>
             <div class="swiper-slide"><img src="./img/main/section_1/Group 593.png" alt=""></div>
@@ -45,7 +49,7 @@
         <div id="inner">
           <p><strong>Designs<em></em><em></em></strong></p>
           <p><strong>User Experiences<em></em></strong></p>
-          <p><span>축적된 프로젝트 노하우로 놀라운 사용자경험을 디자인</span></p>
+          <p><span>축적된 프로젝트 노하우로 놀라운 사용자 경험을 디자인</span></p>
         </div>
         <dl>
           <dt>
@@ -54,57 +58,176 @@
           </dt>
           <dd><a href="#"><img src="./img/header_footer/Vector.png" alt=""></a></dd>
         </dl>
-        <!-- gnb -->
-        <nav class="gnb">
-          <div>
-            <span>Close</span>
-            <div class="gnb_btn_wrap">
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-          <ul>
-            <li><a href="#">About<em></em></a></li>
-            <li><a href="#">Portfolio<em></em></a></li>
-            <li><a href="#">Contact<em></em></a></li>
-            <li><a href="#">Recruit<em></em></a></li>
-            <li><a href="#">Metaverse<em></em></a></li>
-          </ul>
-          <dl>
-            <dt>Contact</dt>
-            <dl>
-              <dd>T. 02-2635-3601</dd>
-              <dd>F. 02-0000-0000</dd>
-              <dd><a href="mailto:rianag#@rianag.com">E. rianag#@rianag.com</a></dd>
-            </dl>
-          </dl>
-          <dl>
-            <dt>address</dt>
-            <dd>(우)07532 서울특별시 강서구 양천로 551-17 한화비즈메트로 1차 310, 311호</dd>
-          </dl>
-        </nav>
-        <!-- // gnb -->
+       <nav class="gnb" data-include="./gnb.html"></nav>
       </section>
       <section class="sec_2">
         <div id="inner">
           <img src="./img/main/section_2/Group 401.png" alt="rianag creator">
-          <p>리앙에이지는 국내 최고의 전문가들이 
+          <p>리앙에이지는 국내 최고의 전문가들이<br>
             설립한 글로벌 UX 전문기업입니다.</p>
-          <p>e-Commerce, e-Finance, e-Brand 등 
+          <p>e-Commerce, e-Finance, e-Brand 등 <br>
               강한 리더십과 커뮤니케이션 능력을 지닌 전문기업입니다.</p>
         </div>
       </section>
       <section class="sec_3">
-        <div id="inner">section3</div>
+        <div class="sec_3_swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/main/section_3/Rectangle 206.png" alt=""></div>
+            <div class="swiper-slide"><img src="./img/main/section_3/Rectangle 206.png" alt=""></div>
+            <div class="swiper-slide"><img src="./img/main/section_3/Rectangle 206.png" alt=""></div>
+            <div class="swiper-slide"><img src="./img/main/section_3/Rectangle 206.png" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div id="inner">
+          <p>Amazing User</p>
+          <p><strong>Front-End Dev<em></em></strong></p>
+          <p>
+            And with great effort for it, we take responsibility for our name. And with great effort<br> 
+            for it, we take responsibility for our name.<br>
+            And with great effort for it, we take responsibility for our name. <br>
+            And with great effort for it, we take responsibility for our name.And with <br>
+            great effort for it, we take responsibility for our name. And with great effort for it, <br>
+            we take responsibility for our name.
+          </p>
+        </div>
       </section>
       <section class="sec_4">
-        <div id="inner">section4</div>
+        <div id="inner">
+          <h2>Metaverse R&amp;D Center</h2>
+          <dl>
+            <dt><img src="./img/main/section_4/Rectangle 305.png" alt=""></dt>
+            <dd>
+              <dl>
+                <dt><img src="./img/main/section_4/Rectangle 307.png" alt=""></dt>
+                <dd>
+                  <p>메타버스 <br>미디어 콘텐츠 R&amp;D</p>
+                  <p>e-Commerce, e-Finance, e-Brand 등<br>
+                    강한 리더십과 커뮤니케이션 능력을 지닌 전문기업입니다.</p>
+                </dd>
+              </dl>
+            </dd>
+          </dl>
+         
+          <dl>
+            <dt><img src="./img/main/section_4/Rectangle 306.png" alt=""></dt>
+            <dd>
+              <dl>
+                <dt><img src="./img/main/section_4/Rectangle 308.png" alt=""></dt>
+                <dd>
+                  <p>메타버스<br>
+                  콘텐츠 제작</p>
+                  <p>e-Commerce, e-Finance, e-Brand 등 <br>
+                  강한 리더십과 커뮤니케이션 능력을 지닌 전문기업입니다.</p></p></dd>
+                <dd><a href="#">Metaverse R&amp;D Center <i class="fa-solid fa-arrow-right"></i></a></dd>
+              </dl>
+            </dd>
+          </dl>
+          
+        </div>
       </section>
       <section class="sec_5">
-        <div id="inner">section5</div>
+        <div id="inner">
+          <h2>Experience</h2>
+          <div class="gallery js-masonry">
+            <dl class="item">
+              <dt><img src="./img/main/section_5/Group 568.png" alt=""></dt>
+              <dd>
+                <ul>
+                  <li>eCommerce</li>
+                  <li>Web/Mobile </li>
+                </ul>
+              </dd>
+              <dd>홈앤쇼핑 인터넷모바일<br> 
+                쇼핑몰 디자인 운영</dd>
+            </dl>
+            <dl class="item">
+              <dt><img src="./img/main/section_5/Group 570.png" alt=""></dt>
+              <dd>
+                <ul>
+                  <li>eCommerce</li>
+                  <li>Web/Mobile </li>
+                </ul>
+              </dd>
+              <dd>롯데인터넷면세점몰 UI 운영</dd>
+            </dl>
+            <dl class="item">
+              <dt><img src="./img/main/section_5/Rectangle 287.png" alt=""></dt>
+              <dd>
+                <ul>
+                  <li>eCommerce</li>
+                  <li>Web/Mobile </li>
+                </ul>
+              </dd>
+              <dd>KB국민카드 <br>
+                태블릿ODS 서비스 고도화</dd>
+            </dl>
+            <dl class="item">
+              <dt><img src="./img/main/section_5/Rectangle 353 copy.png" alt=""></dt>
+              <dd>
+                <ul>
+                  <li>eCommerce</li>
+                  <li>Web/Mobile </li>
+                </ul>
+              </dd>
+              <dd>현대백화점 <br>
+                면세점 온라인몰 리뉴얼</dd>
+            </dl>
+            <dl class="item">
+              <dt><img src="./img/main/section_5/Rectangle 355.png" alt=""></dt>
+              <dd>
+                <ul>
+                  <li>eCommerce</li>
+                  <li>Web/Mobile </li>
+                </ul>
+              </dd>
+              <dd>현대리바트 온라인 브랜드몰</dd>
+            </dl>
+            <dl class="item">
+              <dt><img src="./img/main/section_5/Rectangle-353.png" alt=""></dt>
+              <dd>
+                <ul>
+                  <li>eCommerce</li>
+                  <li>Web/Mobile </li>
+                </ul>
+              </dd>
+              <dd>OK캐쉬백 온라인 서비스 운영</dd>
+            </dl>
+          </div>
+          <div><a href="./sub.html">MORE +</a></div>
+        </div>
       </section>
       <section class="sec_6">
-        <div id="inner">section6</div>
+        <div id="inner">
+          <h2>Our Clients</h2>
+          <ul class="element_jumps">
+            <li><img src="./img/main/section_6/clients_01.png" alt="홈앤쇼핑"></li>
+            <li><img src="./img/main/section_6/clients_02.png" alt="홈앤쇼핑"></li>
+            <li><img src="./img/main/section_6/clients_02.png" alt="홈앤쇼핑"></li>
+            <li><img src="./img/main/section_6/clients_04.png" alt="홈앤쇼핑"></li>
+            <li><img src="./img/main/section_6/clients_05.png" alt="홈앤쇼핑"></li>
+            <li><img src="./img/main/section_6/clients_06.png" alt="홈앤쇼핑"></li>
+            <li><img src="./img/main/section_6/clients_07.png" alt="홈앤쇼핑"></li>
+            <li><img src="./img/main/section_6/clients_08.png" alt="홈앤쇼핑"></li>
+            <li><img src="./img/main/section_6/clients_09.png" alt="홈앤쇼핑"></li>
+            <li><img src="./img/main/section_6/clients_10.png" alt="홈앤쇼핑"></li>
+            <li><img src="./img/main/section_6/clients_11.png" alt="홈앤쇼핑"></li>
+            <li><img src="./img/main/section_6/clients_12.png" alt="홈앤쇼핑"></li>
+            <li><img src="./img/main/section_6/clients_13.png" alt="홈앤쇼핑"></li>
+            <li><img src="./img/main/section_6/clients_14.png" alt="홈앤쇼핑"></li>
+            <li><img src="./img/main/section_6/clients_15.png" alt="홈앤쇼핑"></li>
+            <li><img src="./img/main/section_6/clients_16.png" alt="홈앤쇼핑"></li>
+            <li><img src="./img/main/section_6/clients_17.png" alt="홈앤쇼핑"></li>
+            <li><img src="./img/main/section_6/clients_18.png" alt="홈앤쇼핑"></li>
+            <li><img src="./img/main/section_6/clients_19.png" alt="홈앤쇼핑"></li>
+            <li><img src="./img/main/section_6/clients_20.png" alt="홈앤쇼핑"></li>
+            <li><img src="./img/main/section_6/clients_21.png" alt="홈앤쇼핑"></li>
+            <li><img src="./img/main/section_6/clients_22.png" alt="홈앤쇼핑"></li>
+            <li><img src="./img/main/section_6/clients_23.png" alt="홈앤쇼핑"></li>
+            <li><img src="./img/main/section_6/clients_24.png" alt="홈앤쇼핑"></li>
+            <li><img src="./img/main/section_6/clients_25.png" alt="홈앤쇼핑"></li>
+          </ul>
+        </div>
       </section>
     </div>
     <footer data-include="./footer.html"></footer>
