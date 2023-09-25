@@ -8,35 +8,6 @@
 .sec_1 > dl {font-size:0.8em; position:absolute; right:20px; bottom:20px; z-index:100; display:flex; align-items:center; cursor:pointer;}
 .sec_1 > dl dt {margin-right:10px; display:flex; flex-direction:column}
 
-/* gnb */
-.gnb {padding:40px 60px; box-sizing:border-box; background-color: #111;; position:absolute; top:0; right:-1000px; bottom: 0; z-index:110; opacity: 0.92; transition: right 0.5s}
-.gnb > div {display:flex; justify-content: flex-end; align-items:center; cursor:pointer;}
-.gnb > div > span {margin-right:10px;}
-.gnb > div >.gnb_btn_wrap {position:relative;}
-.gnb > div >.gnb_btn_wrap span {width:1.5em; height:0.16em; background:#fff; position:absolute; display: block;}
-.gnb > div >.gnb_btn_wrap span:first-of-type {top:0;transform:rotate(-45deg);}
-.gnb > div >.gnb_btn_wrap span:last-of-type {top:0; transform:rotate(45deg);}
-.gnb > ul {padding:4vw 0; font-size:3vw; font-weight:700;}
-.gnb > ul li {padding-bottom:2vw; box-sizing:border-box;}
-.gnb > ul li a {position:relative; transition:all 0.5s;}
-.gnb > ul li a::before {content:''; width:0%; height:2px; background:#E0272C; position:absolute; top:50%; left:0%; transform:translateY(-50%); transition: all 0.5s;}
-.gnb > ul li em {width:15px; height:15px; border-radius:50%; background:#E0272C; position:absolute; bottom:10px; display:inline-block; opacity:0; transition: opacity 0.7s}
-.gnb > dl > dt {font-size:16px; font-weight:700;}
-.gnb > dl > dl {display:flex; align-items:baseline;}
-.gnb > dl {padding:20px; vertical-align: bottom;}
-.gnb > dl > dd {font-size:14px;}
-.gnb > dl:first-of-type > dl > dd::after {content:''; width:2px; height:15px; margin:0 5px; background:#fff; display:inline-block;}
-.gnb > dl:first-of-type > dl > dd:last-of-type:after {display:none;}
-
-/* gnb hover */
-.gnb ul li:hover a {color:transparent; text-decoration:line-through; text-decoration-color:#E0272C; text-decoration-thickness:2px; -webkit-text-stroke: 1px #fff;}
-.gnb ul li:hover a::before {width:100%;}
-.gnb ul li:hover em {opacity:1}
-
-/* nav active */
-.gnb.on {right:0;}
-
-
 /* section 2 */
 .sec_2 {padding:6vw; display:flex;}
 .sec_2 #inner {padding:3vw 5vw; text-align:right;}

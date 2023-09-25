@@ -43,6 +43,25 @@ var swiper_1 = new Swiper(".sec_1_swiper", {
         delay: 2500,
         disableOnInteraction: false,
       },
+      
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+    /* visual swiper */
+    var swiper_2 = new Swiper(".visual_swiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,

@@ -1,0 +1,34 @@
+body {background:#fff;}
+header {padding:0.5vw 6vw; background: rgba(255,255,255,0.5);}
+
+/*recruit*/
+.recruit {width:100%; padding-bottom:6vw; position:relative;}
+.recruit img {width: 100%; object-fit:cover;}
+.recruit #inner {position:absolute; top:50%; left:12%; z-index:100; transform:translateY(-50%); }
+
+/*think*/
+.think {padding: 10vw 0; position:relative;}
+.think #inner {width:100%;}
+.think #inner img {width:100%;}
+.think #inner p strong{ color:#111; font-size: 4vw; font-weight:700; position:absolute; top:3%; right: 45%;}
+.think #inner p strong em {bottom: 5% !important;}
+
+/* benefit */
+.benefit {color:#111; position:relative;}
+.benefit #inner > dl{display:flex; align-items:flex-start; justify-content: space-between;}
+.benefit #inner > dl > dt, .employment #inner dl >dt {margin-right:6vw;}
+.benefit #inner > dl > dt > p:last-of-type > span, .employment #inner dl >dt> p:last-of-type >span{color:#111; font-size:25px; font-weight:300;}
+.benefit #inner > dl > dt > p > strong, .employment #inner dl > dt > p > strong {color:#111; font-size:4vw;}
+.benefit #inner > dl > dt > p > span {font-size:2vw;}
+.benefit #inner > dl > dd > ul {display:flex; justify-content: flex-end; flex-flow: row wrap; gap: 20px;}
+.benefit #inner > dl > dd > ul li{width:20vw; height:10vw; padding:20px; border:1px solid #F7F7F7; border-radius:12px; background:#F7F7F7; box-sizing:border-box;}
+.benefit #inner > dl > dd > ul li p:first-of-type {padding: 10px 0; position:relative; display:flex; justify-content: space-between; align-items:center;}
+.benefit #inner > dl > dd > ul li p:first-of-type ::before {content: ''; width:100%; height:2px; background-color: #242424; position:absolute; left:0; right:0; bottom:0; display:block;}
+.benefit #inner > dl > dd > ul li p:first-of-type span{font-size:22px; font-weight:700;}
+.benefit #inner > dl > dd > ul li p:first-of-type span:last-of-type{color:#D7D7D7; font-weight:700;}
+.benefit #inner > dl > dd > ul li p:last-of-type {margin-top: 10px;}
+.benefit #inner dl > dd > ul > li > p > span{font-size:18px;}
+
+/* employment */
+.employment {padding: 10vw 0;}
+.employment #inner {}
