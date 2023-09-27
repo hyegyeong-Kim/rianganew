@@ -1,13 +1,16 @@
 body {background:#fff;}
 header {padding:0.5vw 6vw; background: rgba(255,255,255,0.5);}
 
+/* nav */
+
 /*recruit*/
-.recruit {width:100%; padding-bottom:6vw; position:relative;}
+header > div > .gnb_btn_wrap{margin-left:2vw; box-sizing:border-box;}
+.recruit {width:100%; position:relative;}
 .recruit img {width: 100%; object-fit:cover;}
 .recruit #inner {position:absolute; top:50%; left:12%; z-index:100; transform:translateY(-50%); }
 
 /*think*/
-.think {padding: 10vw 0; position:relative;}
+.think {padding: 10vw 0; margin-top:6vw; position:relative;}
 .think #inner {width:100%;}
 .think #inner img {width:100%;}
 .think #inner p strong{ color:#111; font-size: 4vw; font-weight:700; position:absolute; top:3%; right: 45%;}
@@ -16,7 +19,7 @@ header {padding:0.5vw 6vw; background: rgba(255,255,255,0.5);}
 /* benefit */
 .benefit {color:#111; position:relative;}
 .benefit #inner > dl{display:flex; align-items:flex-start; justify-content: space-between;}
-.benefit #inner > dl > dt, .employment #inner dl >dt {margin-right:6vw;}
+.benefit #inner > dl > dt{margin-right:6vw;}
 .benefit #inner > dl > dt > p:last-of-type > span, .employment #inner dl >dt> p:last-of-type >span{color:#111; font-size:25px; font-weight:300;}
 .benefit #inner > dl > dt > p > strong, .employment #inner dl > dt > p > strong {color:#111; font-size:4vw;}
 .benefit #inner > dl > dt > p > span {font-size:2vw;}
@@ -31,4 +34,36 @@ header {padding:0.5vw 6vw; background: rgba(255,255,255,0.5);}
 
 /* employment */
 .employment {padding: 10vw 0;}
-.employment #inner {}
+.employment #inner dl >dt {margin-right: 6vw;}
+.employment #inner > dl {display:flex; justify-content: space-between;}
+.employment #inner > .board_type_toggle > dt > a {font-size:18px; display:flex; flex-direction:column; display:inline-block;}
+.employment #inner > .board_type_toggle > dt > a > div {font-size:18px !important;}
+
+/* accodian_toggle */
+.board_type_toggle {width:830px; border-top:1px solid #333; border-bottom:1px solid #333;}
+.board_type_toggle > dt {width:100%; padding:1.2vw 0.8VW; box-sizing:border-box; color:#111; border-top:1px solid #e8e5e2; position:relative; display:flex;  align-items:center;}
+.board_type_toggle > dt:before, .board_type_toggle > dd:before {color:#111; font-size:28px; font-weight:500; position:absolute; top:5px; left:20px;}
+/* .board_type_toggle > dt:before {content:'Q';}
+.board_type_toggle > dd:before {content:'A';} */
+
+.board_type_toggle > dt > p:first-of-type {font-size:18px; font-weight:400; width:200px;}
+.board_type_toggle > dt > p:last-of-type {width:40px; height:40px; position:relative; }
+.board_type_toggle > dt > p:last-of-type {position: absolute; right:15px;}
+.board_type_toggle > dt > p:last-of-type > span {height:3px; background:#242424; position:absolute; top:50%; left:0; right:0; display: block; transform: translateY(-50%); }
+.board_type_toggle > dt > p:last-of-type > span:last-of-type {transform: rotate(90deg); transition: all 0.2s}
+.employment #inner > dl > dd > .board_type_toggle > dt.current > p:last-of-type > span:last-of-type {transform:rotate(0deg); opacity:0;}
+.board_type_toggle > dt a {padding:15px 15px 15px 30px; color:#767676;font-size:16px; display:block;}
+.board_type_toggle > dt > a > div:first-of-type {color:#242424; font-size:28px; font-weight:700;}
+.board_type_toggle > dd {padding:30px 15px 30px 70px; line-height:1.5; color:#242424; background-color:#f2f2f2; border-top:1px solid #dbdbdb; position:relative; overflow:hidden; display:none; transition:height 0.2s ease-out;}
+.show {display:block !important;}
+.employment #inner > dl > dd > .board_type_toggle > dd > p > strong{font-size:17px; font-weight:500;}
+.employment #inner > dl > dd > .board_type_toggle > dd > p {font-size:17px !important; font-weight:500 !important;}
+.employment #inner > dl > dd > .board_type_toggle > dd > p > strong > em {width:10px; height:10px; margin-left:5px;}
+.employment #inner > dl > dd > .board_type_toggle > dd > dl > dt {margin-top:30px; font-size:16px; font-weight:500;}
+.employment #inner > dl > dd > .board_type_toggle > dd > dl > dd > ul {padding-left:25px; color:#767676; font-size:14px;}
+.employment #inner > dl > dd > .board_type_toggle > dd > dl > dd > ul > li {list-style: disc;}
+.employment #inner > dl > dd > .board_type_toggle > dd > dl > dd > ul > li::marker { text-indent: 20px; display: inline-block;}
+
+footer {padding:2vw 6vw}
+footer div {width: 20%;}
+footer div img {width: 100%;}

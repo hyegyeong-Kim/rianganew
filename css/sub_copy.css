@@ -1,5 +1,7 @@
-.wrap {position:relative;}
+.wrap {padding-bottom:3vw; position:relative;}
 .container #inner > h2 {padding-top:6vw;}
+#inner .gnb > div span {font-size: 18px !important;}
+
 #inner > ul {display:flex;}
 #inner > ul > li {margin-right: 2.5vw;}
 #inner > ul > li > a {position:relative;}
@@ -25,3 +27,5 @@
 .masonry .item > dd:last-of-type, .sub_wrap .item > dd:last-of-type {margin-top:1vw; font-size:1.5vw; font-weight:500;}
 .masonry .item, .sub_wrap .item {margin-top: 30px;}
 .wrap footer {margin-top: 30px;}
+/*footer*/
+/* footer {position:absolute; bottom:0; left:0; right:0;} */
